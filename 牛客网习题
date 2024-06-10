@@ -1,0 +1,14 @@
+有如下程序段：
+1
+2
+char fun(char *);
+main() { char *s = "one", a[5] = {0}, (*f1)(char *) = fun, ch; }
+则对函数fun的调用语句正确的是
+A
+*f1(&a);
+B
+f1（*s）;
+C
+f1(&ch);
+D
+ch = *f1(s);要改成（*f1）(s)才正确
